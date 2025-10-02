@@ -74,8 +74,8 @@
   align-items: center;
   justify-content: center;
   margin-right: 0.8rem;
-  box-shadow: 0 4px 15px rgba(138, 124, 255, 0.2);
-  border: 2px solid rgba(138, 124, 255, 0.1);
+  box-shadow: 0 4px 15px rgba(155, 135, 245, 0.2);
+  border: 2px solid rgba(155, 135, 245, 0.1);
 }
 
 .hero-button--secondary:hover {
@@ -113,7 +113,7 @@
 /* Botón genérico */
 .btn {
   display: inline-block;
-  background-color: #e8491d;
+  background: var(--gradient-primary);
   color: var(--color-white);
   border: none;
   padding: 0.7rem 1.5rem;
@@ -123,10 +123,13 @@
   font-size: 1rem;
   border-radius: var(--border-radius-sm);
   transition: var(--transition-fast);
+  box-shadow: var(--shadow-md);
 }
 
 .btn:hover {
-  background-color: #c13c17;
+  background: var(--gradient-secondary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
 }
 
 /* Responsive para botones */

@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy - MemorySparks</title>
+    <link rel="icon" href="public/images/logo/app_icon.jpg" type="image/jpeg" />
+    <style>
+      :root {
+        --color-primary: #9b87f5;
+        --color-secondary: #f4c542;
+        --color-black: #0f172a;
+        --color-white: #ffffff;
+        --color-gray-light: #f8f7fc;
+        --color-gray-medium: #8b7fa8;
+        --color-gray-dark: #2a2540;
+        --gradient-title: linear-gradient(90deg, #9b87f5, #b8a7f9, #f4c542);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.6;
+        color: var(--color-gray-dark);
+        background-color: var(--color-white);
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      header {
+        text-align: center;
+        padding: 3rem 0 2rem;
+        border-bottom: 2px solid var(--color-gray-light);
+        position: relative;
+      }
+
+      .back-home {
+        position: absolute;
+        top: 2rem;
+        left: 0;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        color: var(--color-primary);
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        border-radius: 8px;
+      }
+
+      .back-home:hover {
+        background-color: var(--color-gray-light);
+        text-decoration: none;
+        transform: translateX(-3px);
+      }
+
+      .back-home::before {
+        content: "←";
+        font-size: 1.2rem;
+      }
+
+      .logo {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .logo img {
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+      }
+
+      .logo-text {
+        font-size: 1.8rem;
+        font-weight: 700;
+        background: var(--gradient-title);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        color: var(--color-black);
+        margin-bottom: 0.5rem;
+      }
+
+      .subtitle {
+        color: var(--color-gray-medium);
+        font-size: 1rem;
+      }
+
+      .content {
+        padding: 3rem 0;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+        color: var(--color-black);
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid var(--color-primary);
+      }
+
+      h3 {
+        font-size: 1.3rem;
+        color: var(--color-primary);
+        margin-top: 2rem;
+        margin-bottom: 0.8rem;
+      }
+
+      p {
+        margin-bottom: 1rem;
+        color: var(--color-gray-dark);
+      }
+
+      ul, ol {
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      li {
+        margin-bottom: 0.5rem;
+        color: var(--color-gray-dark);
+      }
+
+      .highlight-box {
+        background-color: #fef3c7;
+        border-left: 4px solid var(--color-secondary);
+        padding: 1rem 1.5rem;
+        margin: 1.5rem 0;
+        border-radius: 4px;
+      }
+
+      .info-box {
+        background-color: var(--color-gray-light);
+        border-left: 4px solid var(--color-primary);
+        padding: 1rem 1.5rem;
+        margin: 1.5rem 0;
+        border-radius: 4px;
+      }
+
+      .warning-box {
+        background-color: #fee2e2;
+        border-left: 4px solid #ef4444;
+        padding: 1rem 1.5rem;
+        margin: 1.5rem 0;
+        border-radius: 4px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1.5rem 0;
+      }
+
+      th, td {
+        border: 1px solid var(--color-gray-light);
+        padding: 0.75rem;
+        text-align: left;
+      }
+
+      th {
+        background-color: var(--color-gray-light);
+        color: var(--color-black);
+        font-weight: 600;
+      }
+
+      strong {
+        color: var(--color-black);
+        font-weight: 600;
+      }
+
+      a {
+        color: var(--color-primary);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .summary-section {
+        background: linear-gradient(135deg, #f8f7fc 0%, #ffffff 100%);
+        border: 2px solid var(--color-primary);
+        border-radius: 12px;
+        padding: 2rem;
+        margin: 2rem 0;
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem 0;
+        border-top: 2px solid var(--color-gray-light);
+        color: var(--color-gray-medium);
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 1rem;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        h3 {
+          font-size: 1.2rem;
+        }
+
+        table {
+          font-size: 0.9rem;
+        }
+
+        th, td {
+          padding: 0.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a href="index.html" class="back-home">Back to Home</a>
+        <div class="logo">
+          <img src="public/images/logo/app_icon.jpg" alt="MemorySparks" />
+          <span class="logo-text">MemorySparks</span>
+        </div>
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">Effective Date: October 1, 2025 | Last Updated: October 1, 2025</p>
+      </header>
+
+      <div class="content">
+        <p>Welcome to MemorySparks! Your privacy is important to us. This Privacy Policy explains how we collect, use, store, and protect your personal information when you use the MemorySparks mobile application ("App").</p>
+
+        <p><strong>By using MemorySparks, you agree to the collection and use of information in accordance with this Privacy Policy.</strong></p>
+
+        <div class="summary-section">
+          <h2 style="margin-top: 0; border: none; padding: 0;">Quick Summary</h2>
+          <p><strong>What we collect:</strong> Account info (email, name), memory text & images for AI story generation, subscription status</p>
+          <p><strong>What we DON'T collect:</strong> Device tracking data, usage analytics, crash reports, location, browsing history</p>
+          <p><strong>Third parties:</strong> Google Gemini AI (story generation), RevenueCat (subscriptions), Supabase (authentication)</p>
+          <p><strong>Your rights:</strong> Access, correct, delete, and export your data anytime</p>
+          <p><strong>Contact:</strong> <a href="mailto:hansleonel@icloud.com">hansleonel@icloud.com</a></p>
+        </div>
+
+        <h2>1. Service Provider Information</h2>
+        <p>MemorySparks is operated by:</p>
+        <p><strong>Hans Leonel Jurado Munoz</strong><br>
+        Lima, Peru<br>
+        Email: <a href="mailto:hansleonel@icloud.com">hansleonel@icloud.com</a></p>
+        <p>For privacy-related inquiries, please contact us at: <a href="mailto:hansleonel@icloud.com">hansleonel@icloud.com</a></p>
+
+        <h2>2. Information We Collect</h2>
+
+        <h3>2.1 Information You Provide Directly</h3>
+
+        <p><strong>Account Information:</strong></p>
+        <p>When you create an account, we collect:</p>
+        <ul>
+          <li>Full name (optional, from Apple/Google Sign-In)</li>
+          <li>Email address</li>
+          <li>Username (user-selected)</li>
+          <li>User ID (auto-generated by Supabase)</li>
+          <li>Authentication credentials (if using email/password registration)</li>
+          <li>Profile picture (optional, from Google Sign-In)</li>
+          <li>Bio (optional, user-provided)</li>
+        </ul>
+
+        <p><strong>Story Generation Input:</strong></p>
+        <p>When you use MemorySparks to generate stories, we process:</p>
+        <ul>
+          <li><strong>Your memory text</strong> (the text you provide to create a story)</li>
+          <li><strong>Uploaded images</strong> (photos you choose to include in story generation)</li>
+          <li>Story parameters (genre: Romance, Adventure, Mystery, Fantasy, Horror, Sci-Fi, etc.)</li>
+          <li>Author style preferences (optional)</li>
+          <li>Language preferences</li>
+        </ul>
+
+        <div class="warning-box">
+          <p><strong>⚠️ IMPORTANT:</strong> Your memory text and uploaded images are sent to <strong>Google Gemini AI</strong> for story generation. These are processed by Google's servers to create your personalized story. We recommend not including highly sensitive personal information in your memory text.</p>
+        </div>
+
+        <h3>2.2 Information Collected Automatically</h3>
+
+        <p><strong>Story Interaction Data:</strong></p>
+        <ul>
+          <li>Number of times you read each saved story (read count)</li>
+          <li>Story ratings you provide (1-5 stars)</li>
+          <li>Stories you save or mark as favorites</li>
+        </ul>
+
+        <p><strong>Account Activity:</strong></p>
+        <ul>
+          <li>Account creation date</li>
+          <li>Last sign-in date</li>
+          <li>Profile update timestamps</li>
+          <li>Authentication provider used (email, Apple, or Google)</li>
+        </ul>
+
+        <p><strong>Subscription Status:</strong></p>
+        <p>Through RevenueCat, we track:</p>
+        <ul>
+          <li>Whether you have an active premium subscription</li>
+          <li>Subscription type (weekly: $3.99, monthly: $12.99, annual: $79.99)</li>
+          <li>Subscription expiration date</li>
+        </ul>
+
+        <h3>2.3 Local Storage (On Your Device Only)</h3>
+        <p>The following information is stored <strong>only on your device</strong> in a local database and is <strong>NOT</strong> transmitted to our servers:</p>
+        <ul>
+          <li>Full text of generated stories</li>
+          <li>Story metadata (title, genre, creation date, status)</li>
+          <li>Custom images you upload (stored as file paths)</li>
+          <li>Draft stories (automatically deleted after 2 days)</li>
+          <li>Your story preferences and settings</li>
+        </ul>
+
+        <div class="info-box">
+          <p><strong>✅ What We Do NOT Collect:</strong></p>
+          <ul>
+            <li>Device model or manufacturer information</li>
+            <li>Operating system version for tracking purposes</li>
+            <li>Unique device identifiers (IDFA, IDFV) for tracking</li>
+            <li>Time spent in the app</li>
+            <li>Detailed usage analytics or behavior tracking</li>
+            <li>Crash reports or error logs</li>
+            <li>IP addresses</li>
+            <li>Location data (GPS)</li>
+            <li>Your contacts, photos (beyond what you choose to upload), or other apps</li>
+            <li>Browsing history outside the app</li>
+          </ul>
+        </div>
+
+        <h2>3. How We Use Your Information</h2>
+
+        <h3>3.1 To Provide Story Generation Service</h3>
+        <ul>
+          <li><strong>Process your memories:</strong> Send your memory text to Google Gemini AI to generate personalized stories</li>
+          <li><strong>Analyze images:</strong> Send uploaded photos to Google Gemini AI for image analysis and story context</li>
+          <li><strong>Personalize content:</strong> Use your genre preferences and style choices to tailor stories</li>
+          <li><strong>Save your stories:</strong> Store generated stories locally on your device</li>
+        </ul>
+
+        <h3>3.2 To Manage Your Account</h3>
+        <ul>
+          <li>Create and maintain your user account</li>
+          <li>Authenticate your identity when you sign in</li>
+          <li>Remember your preferences and settings</li>
+          <li>Track your premium subscription status</li>
+          <li>Sync your subscription across devices (via RevenueCat)</li>
+        </ul>
+
+        <h3>3.3 To Provide Customer Support</h3>
+        <ul>
+          <li>Respond to your support requests and inquiries</li>
+          <li>Troubleshoot technical issues</li>
+          <li>Communicate important service updates</li>
+        </ul>
+
+        <h3>3.4 To Ensure Security</h3>
+        <ul>
+          <li>Protect against unauthorized access to your account</li>
+          <li>Prevent fraudulent subscription activity</li>
+          <li>Enforce our Terms of Service</li>
+          <li>Protect the rights and safety of MemorySparks and users</li>
+        </ul>
+
+        <div class="info-box">
+          <p><strong>We Do NOT Use Your Data For:</strong></p>
+          <ul>
+            <li>❌ Advertising or marketing to you</li>
+            <li>❌ Selling to third parties</li>
+            <li>❌ Behavioral tracking or profiling</li>
+            <li>❌ Analytics beyond basic subscription metrics</li>
+          </ul>
+        </div>
+
+        <h2>4. Third-Party Services and Data Sharing</h2>
+
+        <h3>4.1 Google Gemini AI (Story Generation)</h3>
+        <p><strong>Purpose:</strong> Generate personalized AI stories based on your input</p>
+        <p><strong>Privacy Policy:</strong> <a href="https://ai.google.dev/gemini-api/terms" target="_blank">https://ai.google.dev/gemini-api/terms</a></p>
+
+        <p><strong>Data Shared:</strong></p>
+        <ul>
+          <li>✅ Your memory text (the full text you provide)</li>
+          <li>✅ Uploaded images (as base64-encoded data, up to 20MB)</li>
+          <li>✅ Story parameters (genre, theme)</li>
+          <li>✅ Language preference</li>
+          <li>✅ Author style preference (optional)</li>
+          <li>❌ NO personally identifiable information (name, email, user ID)</li>
+        </ul>
+
+        <div class="warning-box">
+          <p><strong>⚠️ IMPORTANT:</strong> Your memory text and images are sent to Google's servers for AI processing. Google processes this data according to their Gemini API terms and privacy policy.</p>
+        </div>
+
+        <h3>4.2 RevenueCat (Subscription Management)</h3>
+        <p><strong>Purpose:</strong> Manage in-app subscriptions, verify purchase status, and sync across devices</p>
+        <p><strong>Privacy Policy:</strong> <a href="https://www.revenuecat.com/privacy" target="_blank">https://www.revenuecat.com/privacy</a></p>
+
+        <p><strong>Data Shared:</strong></p>
+        <ul>
+          <li>✅ Your Supabase User ID (anonymized identifier)</li>
+          <li>✅ Subscription status and type</li>
+          <li>✅ Purchase receipts from Apple</li>
+          <li>✅ Platform information (iOS)</li>
+          <li>❌ NO email, name, or other personal information</li>
+        </ul>
+
+        <h3>4.3 Supabase (Backend and Authentication)</h3>
+        <p><strong>Purpose:</strong> User authentication, account management, and data storage</p>
+        <p><strong>Privacy Policy:</strong> <a href="https://supabase.com/privacy" target="_blank">https://supabase.com/privacy</a></p>
+
+        <p><strong>Data Stored:</strong></p>
+        <ul>
+          <li>✅ Account information (email, name, username, user ID)</li>
+          <li>✅ Authentication tokens</li>
+          <li>✅ Profile data (bio, avatar URL, preferences)</li>
+          <li>✅ Account activity (creation date, last sign-in)</li>
+          <li>✅ Subscription status (isPremium flag)</li>
+          <li>❌ Story content is NOT stored on Supabase (stored locally only)</li>
+        </ul>
+
+        <h3>4.4 Apple Sign-In & Google Sign-In</h3>
+        <p><strong>Apple Sign-In:</strong> <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a></p>
+        <p><strong>Google Sign-In:</strong> <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></p>
+
+        <h3>4.5 Apple App Store (Payment Processing)</h3>
+        <p><strong>Important:</strong> All payment processing is handled exclusively by Apple. We never see or store your credit card information.</p>
+        <p><strong>Privacy Policy:</strong> <a href="https://www.apple.com/legal/privacy/" target="_blank">https://www.apple.com/legal/privacy/</a></p>
+
+        <h2>5. Data We Do NOT Collect or Share</h2>
+        <p>To protect your privacy, we <strong>DO NOT:</strong></p>
+        <ul>
+          <li>✅ Collect credit card or payment information (handled by Apple)</li>
+          <li>✅ Sell your personal data to third parties</li>
+          <li>✅ Share your data with advertisers</li>
+          <li>✅ Track your location (GPS data)</li>
+          <li>✅ Access your contacts or photo library (beyond what you choose to share)</li>
+          <li>✅ Monitor your activity outside of MemorySparks</li>
+          <li>✅ Use analytics or tracking SDKs (Firebase Analytics, Amplitude, etc.)</li>
+          <li>✅ Implement crash reporting tools (Sentry, Crashlytics, etc.)</li>
+          <li>✅ Track browsing behavior or create behavioral profiles</li>
+        </ul>
+
+        <h2>6. How We Store and Protect Your Data</h2>
+
+        <h3>6.1 Data Storage</h3>
+        <p><strong>Cloud Storage (Supabase):</strong></p>
+        <ul>
+          <li>Account information and profile data</li>
+          <li>Encrypted in transit using TLS/SSL</li>
+          <li>Encrypted at rest using industry-standard encryption</li>
+        </ul>
+
+        <p><strong>Local Storage (Your Device):</strong></p>
+        <ul>
+          <li>Generated story content (SQLite database)</li>
+          <li>Custom uploaded images (app file directory)</li>
+          <li>App preferences</li>
+          <li>All local data is NOT transmitted to servers</li>
+        </ul>
+
+        <h3>6.2 Data Retention</h3>
+        <ul>
+          <li><strong>Account Data:</strong> Retained while your account is active, deleted within 30 days of account deletion request</li>
+          <li><strong>Local Story Data:</strong> Draft stories automatically deleted after 2 days; saved stories remain until you delete them</li>
+          <li><strong>RevenueCat Data:</strong> Subscription history may be retained for financial/legal compliance (typically 7 years)</li>
+        </ul>
+
+        <h3>6.3 Security Measures</h3>
+        <ul>
+          <li>✅ Encrypted data transmission (HTTPS/TLS 1.2+)</li>
+          <li>✅ Secure authentication protocols (OAuth 2.0, JWT)</li>
+          <li>✅ Password hashing (bcrypt for email/password auth)</li>
+          <li>✅ Access controls and authentication</li>
+          <li>✅ Secure API key management</li>
+        </ul>
+
+        <p><strong>However:</strong> No method of transmission or storage is 100% secure. While we strive to protect your data, we cannot guarantee absolute security.</p>
+
+        <h2>7. Your Privacy Rights</h2>
+
+        <h3>7.1 General Rights (All Users)</h3>
+        <ul>
+          <li><strong>Access:</strong> Request a copy of your personal data</li>
+          <li><strong>Correction:</strong> Request correction of inaccurate data</li>
+          <li><strong>Deletion:</strong> Request deletion of your account and data</li>
+          <li><strong>Export:</strong> Request your data in a portable JSON format</li>
+        </ul>
+        <p><strong>How to Exercise:</strong> Email us at <a href="mailto:hansleonel@icloud.com">hansleonel@icloud.com</a></p>
+
+        <h3>7.2 GDPR Rights (European Union Residents)</h3>
+        <p>If you are in the EU, you have additional rights under GDPR:</p>
+        <ul>
+          <li>Right to Access</li>
+          <li>Right to Rectification</li>
+          <li>Right to Erasure ("Right to be Forgotten")</li>
+          <li>Right to Restrict Processing</li>
+          <li>Right to Data Portability</li>
+          <li>Right to Object</li>
+          <li>Right to Withdraw Consent</li>
+          <li>Right to Lodge a Complaint with your local data protection authority</li>
+        </ul>
+        <p><strong>Response Time:</strong> We will respond to requests within 30 days</p>
+
+        <h3>7.3 CCPA/CPRA Rights (California Residents)</h3>
+        <p><strong>Categories of Personal Information Collected:</strong></p>
+
+        <table>
+          <tr>
+            <th>Category</th>
+            <th>Examples</th>
+            <th>Collected</th>
+          </tr>
+          <tr>
+            <td>Identifiers</td>
+            <td>Name, email, username, user ID</td>
+            <td>✅ Yes</td>
+          </tr>
+          <tr>
+            <td>Commercial Information</td>
+            <td>Subscription status, purchase history</td>
+            <td>✅ Yes</td>
+          </tr>
+          <tr>
+            <td>User-Generated Content</td>
+            <td>Memory text, uploaded images, story parameters</td>
+            <td>✅ Yes</td>
+          </tr>
+          <tr>
+            <td>Account Activity</td>
+            <td>Sign-in dates, profile updates</td>
+            <td>✅ Yes</td>
+          </tr>
+        </table>
+
+        <div class="info-box">
+          <p><strong>✅ WE DO NOT SELL YOUR PERSONAL INFORMATION TO ANYONE.</strong></p>
+        </div>
+
+        <p><strong>Categories of Third Parties We Share With:</strong></p>
+        <table>
+          <tr>
+            <th>Third Party</th>
+            <th>Data Shared</th>
+            <th>Purpose</th>
+          </tr>
+          <tr>
+            <td>Google Gemini AI</td>
+            <td>Memory text, images, story parameters</td>
+            <td>AI story generation</td>
+          </tr>
+          <tr>
+            <td>RevenueCat</td>
+            <td>User ID, subscription status</td>
+            <td>Subscription management</td>
+          </tr>
+          <tr>
+            <td>Supabase</td>
+            <td>Account info, profile data</td>
+            <td>Authentication, data storage</td>
+          </tr>
+          <tr>
+            <td>Apple</td>
+            <td>Subscription receipts</td>
+            <td>Payment processing</td>
+          </tr>
+        </table>
+
+        <p><strong>Your Rights:</strong></p>
+        <ul>
+          <li>Right to Know (what data collected in last 12 months)</li>
+          <li>Right to Delete</li>
+          <li>Right to Opt-Out of Sale (We do NOT sell data)</li>
+          <li>Right to Correct</li>
+          <li>Right to Non-Discrimination</li>
+        </ul>
+
+        <p><strong>How to Exercise Your Rights:</strong></p>
+        <ul>
+          <li><strong>Email:</strong> <a href="mailto:hansleonel@icloud.com">hansleonel@icloud.com</a></li>
+          <li><strong>Subject:</strong> "CCPA Privacy Request - [Access/Delete/Correct]"</li>
+          <li><strong>Response Time:</strong> Within 45 days</li>
+        </ul>
+
+        <h2>8. Children's Privacy</h2>
+        <p>MemorySparks is intended for users aged <strong>13 years and older</strong> (17+ in some regions).</p>
+
+        <h3>8.1 COPPA Compliance (USA)</h3>
+        <ul>
+          <li>We do NOT knowingly collect data from children under 13</li>
+          <li>We do NOT direct the service to children under 13</li>
+          <li>We do NOT sell information of minors under 16</li>
+        </ul>
+
+        <p>If we discover that we have collected information from a child under 13 without verified parental consent, we will delete that information immediately.</p>
+
+        <h3>8.2 Parental Notice</h3>
+        <p>If you are a parent or guardian and believe your child under 13 has provided us with personal information:</p>
+        <ol>
+          <li>Email us immediately at: <a href="mailto:hansleonel@icloud.com">hansleonel@icloud.com</a></li>
+          <li>Include your child's username or email</li>
+          <li>We will delete the account and all associated data within 24 hours</li>
+        </ol>
+
+        <h2>9. International Data Transfers</h2>
+        <p>MemorySparks is operated from Peru and uses third-party services that may store data in various locations worldwide:</p>
+        <ul>
+          <li><strong>Supabase:</strong> May store data in US, EU, or other regions</li>
+          <li><strong>Google Gemini AI:</strong> Processes data on Google's global infrastructure (likely US)</li>
+          <li><strong>RevenueCat:</strong> Stores data in US</li>
+        </ul>
+
+        <p><strong>Data Transfer Safeguards:</strong></p>
+        <ul>
+          <li>Standard Contractual Clauses (SCCs) approved by the European Commission</li>
+          <li>Compliance with local data protection laws (GDPR, CCPA, LGPD)</li>
+          <li>Third-party processors with adequate data protection measures</li>
+        </ul>
+
+        <h2>10. Cookies and Tracking Technologies</h2>
+        <p>MemorySparks is a mobile application and <strong>does not use browser cookies</strong>.</p>
+
+        <p><strong>What We Use:</strong></p>
+        <ul>
+          <li><strong>Local Storage (SQLite):</strong> Store your stories, preferences, and settings on your device</li>
+          <li><strong>Session Management:</strong> JWT tokens stored securely to maintain your login session</li>
+        </ul>
+
+        <p><strong>What We Do NOT Use:</strong></p>
+        <ul>
+          <li>❌ Analytics SDKs (no Firebase Analytics, Amplitude, Mixpanel)</li>
+          <li>❌ Advertising SDKs</li>
+          <li>❌ Device fingerprinting for tracking</li>
+          <li>❌ Cross-app tracking identifiers</li>
+        </ul>
+
+        <h3>10.1 iOS App Tracking Transparency</h3>
+        <div class="info-box">
+          <p><strong>Important:</strong> MemorySparks does <strong>NOT</strong> request App Tracking permission because we do not track you across apps or websites owned by other companies.</p>
+        </div>
+
+        <h2>11. Data Breach Notification</h2>
+        <p>In the unlikely event of a data breach that affects your personal information:</p>
+        <ol>
+          <li><strong>Immediate Investigation:</strong> Assess the scope and impact</li>
+          <li><strong>Notification:</strong> Notify you within <strong>72 hours</strong> of discovering the breach</li>
+          <li><strong>Transparency:</strong> Explain what happened, what data was affected, and our response</li>
+          <li><strong>Regulatory Compliance:</strong> Notify relevant authorities as required by law</li>
+          <li><strong>Guidance:</strong> Provide steps you can take to protect yourself</li>
+        </ol>
+
+        <h2>12. Changes to This Privacy Policy</h2>
+
+        <h3>12.1 Notification of Changes</h3>
+        <p><strong>Material Changes:</strong></p>
+        <p>We will notify you at least <strong>30 days</strong> before material changes take effect via:</p>
+        <ul>
+          <li>Email to your registered address</li>
+          <li>In-app notification</li>
+          <li>Prominent notice on this page</li>
+        </ul>
+
+        <p><strong>Non-Material Changes:</strong></p>
+        <p>Minor updates (typos, clarifications, formatting) may be posted without prior notice.</p>
+
+        <h3>12.2 Your Acceptance</h3>
+        <p>Your continued use of MemorySparks after changes take effect constitutes acceptance of the updated Privacy Policy. If you do not agree to the changes:</p>
+        <ol>
+          <li>Stop using the app</li>
+          <li>Cancel your subscription (through iTunes Account Settings)</li>
+          <li>Request account deletion (email <a href="mailto:hansleonel@icloud.com">hansleonel@icloud.com</a>)</li>
+        </ol>
+
+        <h2>13. Your Choices and Controls</h2>
+
+        <h3>13.1 Account Settings (In-App)</h3>
+        <ul>
+          <li>✅ Update your profile information (name, username, bio)</li>
+          <li>✅ Manage your saved stories</li>
+          <li>✅ Delete individual stories</li>
+          <li>✅ Change privacy settings</li>
+          <li>✅ View subscription status</li>
+        </ul>
+
+        <h3>13.2 Data Deletion</h3>
+        <p><strong>Delete Account:</strong></p>
+        <ol>
+          <li>Email <a href="mailto:hansleonel@icloud.com">hansleonel@icloud.com</a> with subject "Account Deletion Request"</li>
+          <li>Provide your registered email address</li>
+          <li>We will process within 30 days</li>
+        </ol>
+
+        <p><strong>What Happens:</strong></p>
+        <ul>
+          <li>Your account and personal data deleted from Supabase</li>
+          <li>Local stories remain on your device until you delete the app</li>
+          <li>Active subscriptions continue until end of billing period</li>
+          <li>RevenueCat retains subscription history for compliance (typically 7 years)</li>
+        </ul>
+
+        <h2>14. Contact Us</h2>
+        <p>For questions, concerns, or requests regarding this Privacy Policy or your personal data:</p>
+
+        <p><strong>General Privacy Inquiries:</strong></p>
+        <ul>
+          <li><strong>Email:</strong> <a href="mailto:hansleonel@icloud.com">hansleonel@icloud.com</a></li>
+          <li><strong>Subject:</strong> "Privacy Inquiry"</li>
+          <li><strong>Response Time:</strong> Within 7 business days</li>
+        </ul>
+
+        <p><strong>Privacy Rights Requests (GDPR, CCPA, etc.):</strong></p>
+        <ul>
+          <li><strong>Email:</strong> <a href="mailto:hansleonel@icloud.com">hansleonel@icloud.com</a></li>
+          <li><strong>Subject:</strong> "Privacy Rights Request - [GDPR/CCPA] - [Access/Delete/Correct]"</li>
+          <li><strong>Response Time:</strong> Within 30 days (GDPR) or 45 days (CCPA)</li>
+        </ul>
+
+        <p><strong>Account Deletion:</strong></p>
+        <ul>
+          <li><strong>Email:</strong> <a href="mailto:hansleonel@icloud.com">hansleonel@icloud.com</a></li>
+          <li><strong>Subject:</strong> "Account Deletion Request"</li>
+          <li><strong>Response Time:</strong> Processed within 30 days</li>
+        </ul>
+
+        <h2>15. Supervisory Authority</h2>
+        <p><strong>For EU Residents:</strong></p>
+        <p>If you believe we have not adequately addressed your privacy concerns, you have the right to lodge a complaint with your local data protection supervisory authority.</p>
+        <p><strong>Find Your EU Data Protection Authority:</strong> <a href="https://edpb.europa.eu/about-edpb/board/members_en" target="_blank">https://edpb.europa.eu/about-edpb/board/members_en</a></p>
+
+        <div class="summary-section">
+          <h2 style="margin-top: 0; border: none; padding: 0;">Summary: What You Should Know</h2>
+
+          <h3>✅ What We DO Collect:</h3>
+          <table>
+            <tr>
+              <th>Data Type</th>
+              <th>Purpose</th>
+              <th>Shared With</th>
+            </tr>
+            <tr>
+              <td>Account info (email, name, username)</td>
+              <td>Account management</td>
+              <td>Supabase</td>
+            </tr>
+            <tr>
+              <td>Memory text & images</td>
+              <td>Story generation</td>
+              <td>Google Gemini AI</td>
+            </tr>
+            <tr>
+              <td>Story parameters (genre, preferences)</td>
+              <td>Personalization</td>
+              <td>Google Gemini AI</td>
+            </tr>
+            <tr>
+              <td>Subscription status</td>
+              <td>Premium access</td>
+              <td>RevenueCat</td>
+            </tr>
+            <tr>
+              <td>Story ratings & read counts</td>
+              <td>User experience</td>
+              <td>Local device only</td>
+            </tr>
+          </table>
+
+          <h3>❌ What We DO NOT Collect:</h3>
+          <ul>
+            <li>Device info for tracking (model, OS, identifiers)</li>
+            <li>Usage analytics (time spent, features used)</li>
+            <li>Crash reports or error logs</li>
+            <li>Location data (GPS)</li>
+            <li>IP addresses for tracking</li>
+            <li>Your contacts or other apps</li>
+            <li>Browsing behavior</li>
+          </ul>
+
+          <h3>🔒 Key Privacy Facts:</h3>
+          <ul>
+            <li>✅ <strong>Payment:</strong> Handled by Apple (we don't see your credit card)</li>
+            <li>✅ <strong>Stories:</strong> Stored locally on your device</li>
+            <li>✅ <strong>AI Processing:</strong> Memory text/images sent to Google Gemini</li>
+            <li>✅ <strong>No Ads:</strong> We don't share data with advertisers</li>
+            <li>✅ <strong>No Selling:</strong> We never sell your data</li>
+            <li>✅ <strong>Your Rights:</strong> Access, correct, delete, export your data</li>
+            <li>✅ <strong>Age:</strong> 13 years or older</li>
+          </ul>
+        </div>
+
+        <h2>16. Important Links</h2>
+        <ul>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="mailto:hansleonel@icloud.com">Contact Support</a></li>
+          <li><a href="https://ai.google.dev/gemini-api/terms" target="_blank">Google Gemini Terms</a></li>
+          <li><a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Privacy</a></li>
+          <li><a href="https://supabase.com/privacy" target="_blank">Supabase Privacy</a></li>
+        </ul>
+      </div>
+
+      <footer>
+        <p><strong>By using MemorySparks, you acknowledge that you have read and understood this Privacy Policy and agree to its terms.</strong></p>
+        <hr style="margin: 1.5rem 0; border: none; border-top: 1px solid var(--color-gray-light);">
+        <p><strong>Effective Date:</strong> October 1, 2025</p>
+        <p><strong>Last Updated:</strong> October 1, 2025</p>
+        <p><strong>Version:</strong> 2.0 (Corrected based on actual implementation)</p>
+        <hr style="margin: 1.5rem 0; border: none; border-top: 1px solid var(--color-gray-light);">
+        <p>&copy; 2025 MemorySparks. All rights reserved.</p>
+        <p>Operated by Hans Leonel Jurado Munoz | Lima, Peru</p>
+      </footer>
+    </div>
+  </body>
+</html>

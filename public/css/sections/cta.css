@@ -100,8 +100,8 @@
   height: 800px;
   background: radial-gradient(
     circle,
-    rgba(138, 124, 255, 0.2) 0%,
-    rgba(77, 238, 234, 0.1) 30%,
+    rgba(155, 135, 245, 0.2) 0%,
+    rgba(244, 197, 66, 0.1) 30%,
     rgba(0, 0, 0, 0) 70%
   );
   border-radius: var(--border-radius-full);
@@ -117,8 +117,8 @@
   left: -200px;
   background: radial-gradient(
     circle,
-    rgba(77, 238, 234, 0.15) 0%,
-    rgba(138, 124, 255, 0.1) 30%,
+    rgba(244, 197, 66, 0.15) 0%,
+    rgba(155, 135, 245, 0.1) 30%,
     rgba(0, 0, 0, 0) 70%
   );
 }

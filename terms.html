@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms of Service - MemorySparks</title>
+    <link rel="icon" href="public/images/logo/app_icon.jpg" type="image/jpeg" />
+    <style>
+      :root {
+        --color-primary: #9b87f5;
+        --color-secondary: #f4c542;
+        --color-black: #0f172a;
+        --color-white: #ffffff;
+        --color-gray-light: #f8f7fc;
+        --color-gray-medium: #8b7fa8;
+        --color-gray-dark: #2a2540;
+        --gradient-title: linear-gradient(90deg, #9b87f5, #b8a7f9, #f4c542);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.6;
+        color: var(--color-gray-dark);
+        background-color: var(--color-white);
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      header {
+        text-align: center;
+        padding: 3rem 0 2rem;
+        border-bottom: 2px solid var(--color-gray-light);
+        position: relative;
+      }
+
+      .back-home {
+        position: absolute;
+        top: 2rem;
+        left: 0;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        color: var(--color-primary);
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        border-radius: 8px;
+      }
+
+      .back-home:hover {
+        background-color: var(--color-gray-light);
+        text-decoration: none;
+        transform: translateX(-3px);
+      }
+
+      .back-home::before {
+        content: "←";
+        font-size: 1.2rem;
+      }
+
+      .logo {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .logo img {
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+      }
+
+      .logo-text {
+        font-size: 1.8rem;
+        font-weight: 700;
+        background: var(--gradient-title);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        color: var(--color-black);
+        margin-bottom: 0.5rem;
+      }
+
+      .subtitle {
+        color: var(--color-gray-medium);
+        font-size: 1rem;
+      }
+
+      .content {
+        padding: 3rem 0;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+        color: var(--color-black);
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid var(--color-primary);
+      }
+
+      h3 {
+        font-size: 1.3rem;
+        color: var(--color-primary);
+        margin-top: 2rem;
+        margin-bottom: 0.8rem;
+      }
+
+      p {
+        margin-bottom: 1rem;
+        color: var(--color-gray-dark);
+      }
+
+      ul, ol {
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      li {
+        margin-bottom: 0.5rem;
+        color: var(--color-gray-dark);
+      }
+
+      .highlight-box {
+        background-color: #fef3c7;
+        border-left: 4px solid var(--color-secondary);
+        padding: 1rem 1.5rem;
+        margin: 1.5rem 0;
+        border-radius: 4px;
+      }
+
+      .info-box {
+        background-color: var(--color-gray-light);
+        border-left: 4px solid var(--color-primary);
+        padding: 1rem 1.5rem;
+        margin: 1.5rem 0;
+        border-radius: 4px;
+      }
+
+      strong {
+        color: var(--color-black);
+        font-weight: 600;
+      }
+
+      a {
+        color: var(--color-primary);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem 0;
+        border-top: 2px solid var(--color-gray-light);
+        color: var(--color-gray-medium);
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 1rem;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        h3 {
+          font-size: 1.2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a href="index.html" class="back-home">Back to Home</a>
+        <div class="logo">
+          <img src="public/images/logo/app_icon.jpg" alt="MemorySparks" />
+          <span class="logo-text">MemorySparks</span>
+        </div>
+        <h1>Terms of Service</h1>
+        <p class="subtitle">Effective Date: October 1, 2025 | Last Updated: October 1, 2025</p>
+      </header>
+
+      <div class="content">
+        <p>Welcome to MemorySparks! These Terms of Service ("Terms") govern your use of the MemorySparks mobile application ("App") and services. By accessing or using MemorySparks, you agree to be bound by these Terms.</p>
+
+        <p><strong>If you do not agree to these Terms, do not use the App.</strong></p>
+
+        <h2>1. Service Provider</h2>
+        <p>MemorySparks is operated by:</p>
+        <p><strong>Hans Leonel Jurado Munoz</strong><br>
+        Lima, Peru<br>
+        Email: <a href="mailto:hansleonel@icloud.com">hansleonel@icloud.com</a></p>
+
+        <h2>2. Subscription Information</h2>
+
+        <h3>2.1 Subscription Tiers</h3>
+        <p>MemorySparks offers the following auto-renewable subscription options:</p>
+        <ul>
+          <li><strong>Weekly Subscription:</strong> $3.99 USD per week</li>
+          <li><strong>Monthly Subscription:</strong> $12.99 USD per month</li>
+          <li><strong>Annual Subscription:</strong> $79.99 USD per year</li>
+        </ul>
+
+        <p><em>Note: Prices may vary by region and are subject to change with notice.</em></p>
+
+        <h3>2.2 Premium Features</h3>
+        <p>Premium subscriptions provide access to:</p>
+        <ul>
+          <li>Unlimited personalized AI-generated stories using Google Gemini</li>
+          <li>Access to all genres: Romantic, Adventure, Mystery, Fantasy, Horror, Sci-Fi, and more</li>
+          <li>Ad-free experience</li>
+          <li>PDF export and sharing capabilities</li>
+          <li>Enhanced story customization options</li>
+          <li>Local storage of unlimited stories</li>
+          <li>Image upload for story context (up to 20MB per image)</li>
+        </ul>
+
+        <h3>2.3 Auto-Renewal Terms</h3>
+        <div class="highlight-box">
+          <p><strong>IMPORTANT - Apple Auto-Renewal Requirements:</strong></p>
+          <ul>
+            <li>Payment will be charged to your iTunes Account at confirmation of purchase</li>
+            <li>Subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current period</li>
+            <li>Your account will be charged for renewal within 24 hours prior to the end of the current period at the renewal price</li>
+            <li>Subscriptions may be managed by you and auto-renewal may be turned off by going to your iTunes Account Settings after purchase</li>
+            <li>Any unused portion of a free trial period, if offered, will be forfeited when you purchase a subscription</li>
+          </ul>
+        </div>
+
+        <h2>3. Cancellation and Refund Policy</h2>
+
+        <h3>3.1 How to Cancel</h3>
+        <p>You can cancel your subscription at any time through your iTunes Account Settings:</p>
+        <ol>
+          <li>Open the Settings app on your iOS device</li>
+          <li>Tap your name at the top</li>
+          <li>Tap "Subscriptions"</li>
+          <li>Select MemorySparks</li>
+          <li>Tap "Cancel Subscription"</li>
+        </ol>
+
+        <h3>3.2 When Cancellation Takes Effect</h3>
+        <ul>
+          <li>Cancellation takes effect at the end of your current billing period</li>
+          <li>You will retain access to premium features until the end of the paid period</li>
+          <li>No partial refunds are provided for the current subscription period</li>
+        </ul>
+
+        <h3>3.3 Refund Policy</h3>
+        <div class="info-box">
+          <p><strong>Refunds are handled exclusively by Apple, not by MemorySparks.</strong></p>
+          <p>To request a refund:</p>
+          <ol>
+            <li>Visit Apple's refund request page: <a href="https://support.apple.com/en-us/118223" target="_blank">https://support.apple.com/en-us/118223</a></li>
+            <li>Sign in with your Apple ID</li>
+            <li>Select the MemorySparks purchase</li>
+            <li>Choose your reason and submit</li>
+          </ol>
+          <p><strong>Important Notes:</strong></p>
+          <ul>
+            <li>Refunds are at Apple's sole discretion (typically within 14 days of purchase)</li>
+            <li>MemorySparks cannot guarantee refund approval</li>
+            <li>For technical issues, please contact us first at <a href="mailto:hansleonel@icloud.com">hansleonel@icloud.com</a></li>
+          </ul>
+        </div>
+
+        <h2>4. License Grant</h2>
+        <p>Subject to your compliance with these Terms, MemorySparks grants you a limited, non-exclusive, non-transferable, revocable license to:</p>
+        <ul>
+          <li>Download and install the App on devices you own or control</li>
+          <li>Access and use the App for your personal, non-commercial use</li>
+        </ul>
+
+        <h3>4.1 Restrictions</h3>
+        <p>You may NOT:</p>
+        <ul>
+          <li>Use the App for commercial purposes without our written permission</li>
+          <li>Modify, reverse engineer, decompile, or disassemble the App</li>
+          <li>Remove any copyright or proprietary notices</li>
+          <li>Transfer, sublicense, or sell your license to use the App</li>
+        </ul>
+
+        <h2>5. Content Ownership</h2>
+
+        <h3>5.1 MemorySparks Intellectual Property</h3>
+        <p>The App, including its code, design, trademarks, and technology, is owned by Hans Leonel Jurado Munoz and protected by intellectual property laws.</p>
+
+        <h3>5.2 AI-Generated Stories</h3>
+        <ul>
+          <li>Stories are generated by Google Gemini AI based on your input</li>
+          <li>Generated stories are provided for your personal use</li>
+          <li>AI-generated content may not be entirely unique</li>
+          <li>You may not claim exclusive copyright over AI-generated stories</li>
+        </ul>
+
+        <h3>5.3 User-Provided Content</h3>
+        <p>You retain ownership of:</p>
+        <ul>
+          <li>Memory text you provide</li>
+          <li>Images you upload</li>
+        </ul>
+        <p>By using MemorySparks, you grant us a license to use your input solely to:</p>
+        <ul>
+          <li>Generate stories via Google Gemini AI</li>
+          <li>Provide and improve our service</li>
+          <li>Comply with legal obligations</li>
+        </ul>
+
+        <h2>6. Prohibited Uses</h2>
+        <p>You agree NOT to:</p>
+        <ul>
+          <li>Violate any applicable laws or regulations</li>
+          <li>Infringe upon intellectual property rights of others</li>
+          <li>Upload illegal, harmful, or offensive content</li>
+          <li>Share your account credentials with others</li>
+          <li>Use automated systems (bots, scrapers) to access the App</li>
+          <li>Generate content that violates the rights of others</li>
+          <li>Attempt to circumvent security features or subscription verification</li>
+          <li>Interfere with or disrupt the service</li>
+        </ul>
+
+        <h2>7. Service Availability</h2>
+        <ul>
+          <li>We strive to provide reliable service but do not guarantee uninterrupted access</li>
+          <li>We may perform maintenance that temporarily affects availability</li>
+          <li>We reserve the right to modify or discontinue features with reasonable notice</li>
+          <li>We may suspend or terminate accounts that violate these Terms</li>
+        </ul>
+
+        <h2>8. Third-Party Services</h2>
+        <p>MemorySparks uses the following third-party services:</p>
+        <ul>
+          <li><strong>Google Gemini AI:</strong> For story generation and image analysis</li>
+          <li><strong>RevenueCat:</strong> For subscription management</li>
+          <li><strong>Supabase:</strong> For authentication and data storage</li>
+          <li><strong>Apple App Store:</strong> For payment processing</li>
+        </ul>
+        <p>Your use of these services is subject to their respective terms and privacy policies.</p>
+
+        <h2>9. Privacy and Data Protection</h2>
+        <p>Your privacy is important to us. Please review our <a href="privacy.html">Privacy Policy</a> to understand how we collect, use, and protect your data.</p>
+
+        <p><strong>Key Points:</strong></p>
+        <ul>
+          <li>Memory text and images are sent to Google Gemini AI for story generation</li>
+          <li>Payment information is handled exclusively by Apple</li>
+          <li>Stories are stored locally on your device</li>
+          <li>We do not sell your data to third parties</li>
+        </ul>
+
+        <h2>10. Disclaimer of Warranties</h2>
+        <div class="info-box">
+          <p><strong>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND.</strong></p>
+          <p>We disclaim all warranties, express or implied, including:</p>
+          <ul>
+            <li>Warranties of merchantability</li>
+            <li>Fitness for a particular purpose</li>
+            <li>Non-infringement</li>
+            <li>Accuracy, reliability, or completeness of content</li>
+          </ul>
+          <p>We do not guarantee that:</p>
+          <ul>
+            <li>The App will be error-free or uninterrupted</li>
+            <li>Defects will be corrected</li>
+            <li>The App is free from viruses or harmful components</li>
+            <li>AI-generated stories will meet your expectations</li>
+          </ul>
+        </div>
+
+        <h2>11. Limitation of Liability</h2>
+        <p><strong>TO THE MAXIMUM EXTENT PERMITTED BY LAW:</strong></p>
+        <ul>
+          <li>Our total liability is limited to the amount you paid in the last 12 months, or $100 USD, whichever is less</li>
+          <li>We are NOT liable for indirect, incidental, consequential, punitive, or special damages</li>
+          <li>We are NOT liable for loss of data, profits, revenue, or business opportunities</li>
+          <li>We are NOT liable for actions of third-party services (Google, Apple, RevenueCat, Supabase)</li>
+        </ul>
+
+        <h2>12. Indemnification</h2>
+        <p>You agree to indemnify and hold harmless MemorySparks, Hans Leonel Jurado Munoz, and our affiliates from any claims, damages, liabilities, and expenses arising from:</p>
+        <ul>
+          <li>Your violation of these Terms</li>
+          <li>Your use of the App</li>
+          <li>Content you provide or generate</li>
+          <li>Your violation of any rights of another party</li>
+        </ul>
+
+        <h2>13. Age Requirements</h2>
+        <ul>
+          <li>You must be at least <strong>13 years old</strong> to use MemorySparks (17+ in some regions)</li>
+          <li>If you are under 18, you must have parental or guardian consent</li>
+          <li>We comply with COPPA (Children's Online Privacy Protection Act)</li>
+        </ul>
+
+        <h2>14. Modifications to Terms</h2>
+        <p>We reserve the right to update these Terms at any time. Changes will be effective:</p>
+        <ul>
+          <li><strong>Material Changes:</strong> 30 days after notice via email or in-app notification</li>
+          <li><strong>Minor Changes:</strong> Immediately upon posting</li>
+        </ul>
+        <p>Your continued use of the App after changes take effect constitutes acceptance of the updated Terms.</p>
+
+        <h2>15. Modifications to Service and Pricing</h2>
+        <ul>
+          <li>We may modify features, functionality, or pricing with reasonable notice</li>
+          <li>Price changes for existing subscriptions will be communicated at least 30 days in advance</li>
+          <li>You may cancel if you do not agree to price changes</li>
+        </ul>
+
+        <h2>16. Termination</h2>
+
+        <h3>16.1 By You</h3>
+        <ul>
+          <li>Cancel subscription through iTunes Account Settings</li>
+          <li>Request account deletion at <a href="mailto:hansleonel@icloud.com">hansleonel@icloud.com</a></li>
+        </ul>
+
+        <h3>16.2 By Us</h3>
+        <p>We may suspend or terminate your account if you:</p>
+        <ul>
+          <li>Violate these Terms</li>
+          <li>Engage in fraudulent activity</li>
+          <li>Use the App in a manner that harms others or the service</li>
+        </ul>
+
+        <h3>16.3 Effect of Termination</h3>
+        <ul>
+          <li>Your license to use the App ends immediately</li>
+          <li>You must stop using the App</li>
+          <li>Local data on your device is not automatically deleted</li>
+          <li>No refunds for unused subscription time (unless required by law)</li>
+        </ul>
+
+        <h2>17. Governing Law and Dispute Resolution</h2>
+
+        <h3>17.1 Governing Law</h3>
+        <p>These Terms are governed by the laws of <strong>Peru (Lima)</strong>, without regard to conflict of law principles.</p>
+
+        <h3>17.2 Dispute Resolution</h3>
+        <ol>
+          <li><strong>Informal Resolution:</strong> Contact us at <a href="mailto:hansleonel@icloud.com">hansleonel@icloud.com</a> to resolve disputes informally</li>
+          <li><strong>Negotiation Period:</strong> Allow 30 days for good-faith negotiation</li>
+          <li><strong>Arbitration:</strong> If informal resolution fails, disputes will be resolved through binding arbitration in Lima, Peru</li>
+          <li><strong>Class Action Waiver:</strong> You agree to resolve disputes individually, not as part of a class action</li>
+        </ol>
+
+        <h3>17.3 Jurisdiction</h3>
+        <p>Exclusive jurisdiction for any disputes: Courts of Lima, Peru</p>
+
+        <h2>18. Severability</h2>
+        <p>If any provision of these Terms is found to be unenforceable, the remaining provisions will remain in full effect.</p>
+
+        <h2>19. Entire Agreement</h2>
+        <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and MemorySparks.</p>
+
+        <h2>20. Contact Information</h2>
+        <p>For questions, concerns, or requests regarding these Terms:</p>
+        <p>
+          <strong>Hans Leonel Jurado Munoz</strong><br>
+          Lima, Peru<br>
+          Email: <a href="mailto:hansleonel@icloud.com">hansleonel@icloud.com</a><br>
+          Response Time: Within 7 business days
+        </p>
+
+        <h2>21. Apple-Specific Terms</h2>
+        <p>If you downloaded MemorySparks from the Apple App Store:</p>
+        <ul>
+          <li>These Terms are between you and MemorySparks, not Apple</li>
+          <li>Apple has no obligation to provide support for the App</li>
+          <li>Apple is not responsible for the App or its content</li>
+          <li>Apple is a third-party beneficiary of these Terms</li>
+          <li>You must comply with Apple's App Store Terms of Service</li>
+        </ul>
+
+        <h2>22. Important Links</h2>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="mailto:hansleonel@icloud.com">Contact Support</a></li>
+          <li><a href="https://support.apple.com/en-us/118223" target="_blank">Request Refund from Apple</a></li>
+        </ul>
+      </div>
+
+      <footer>
+        <p><strong>Effective Date:</strong> October 1, 2025</p>
+        <p><strong>Last Updated:</strong> October 1, 2025</p>
+        <p><strong>Version:</strong> 1.0</p>
+        <hr style="margin: 1.5rem 0; border: none; border-top: 1px solid var(--color-gray-light);">
+        <p>&copy; 2025 MemorySparks. All rights reserved.</p>
+        <p>Operated by Hans Leonel Jurado Munoz | Lima, Peru</p>
+      </footer>
+    </div>
+  </body>
+</html>

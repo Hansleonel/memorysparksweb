@@ -46,8 +46,11 @@
 }
 
 .hero-title span {
-  color: var(--color-lavender);
-  text-shadow: 0 0 15px rgba(138, 124, 255, 0.3);
+  background: var(--gradient-title);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: none;
 }
 
 .hero-description {
@@ -87,7 +90,7 @@
   max-height: 500px;
   object-fit: contain;
   transition: var(--transition-slow);
-  filter: drop-shadow(0 10px 20px rgba(138, 124, 255, 0.2));
+  filter: drop-shadow(0 10px 20px rgba(155, 135, 245, 0.2));
   background: transparent;
   transform-style: preserve-3d;
 }
@@ -197,8 +200,9 @@
   height: 600px;
   background: radial-gradient(
     circle,
-    rgba(138, 124, 255, 0.5) 0%,
-    rgba(77, 238, 234, 0) 70%
+    rgba(155, 135, 245, 0.15) 0%,
+    rgba(244, 197, 66, 0.05) 50%,
+    rgba(184, 167, 249, 0) 70%
   );
   border-radius: var(--border-radius-full);
   pointer-events: none;
@@ -238,8 +242,9 @@
   height: 120%;
   background: radial-gradient(
     circle at center,
-    rgba(138, 124, 255, 0.4) 0%,
-    rgba(77, 238, 234, 0) 60%
+    rgba(155, 135, 245, 0.12) 0%,
+    rgba(244, 197, 66, 0.08) 40%,
+    rgba(184, 167, 249, 0) 70%
   );
   z-index: -1;
   pointer-events: none;

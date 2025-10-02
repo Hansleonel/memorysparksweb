@@ -5,46 +5,49 @@
   --secondary-font: "ClashDisplay", sans-serif;
   --local-font: "ClashDisplay", "OpenSans", sans-serif;
 
-  /* Colores - MemorySparks Theme */
-  --color-primary: #7c3aed;
-  --color-secondary: #ec4899;
-  --color-accent: #f59e0b;
-  --color-lavender: #a78bfa;
-  --color-cyan: #06b6d4;
-  --color-purple: #7c3aed;
-  --color-teal: #14b8a6;
-  --color-pink: #ec4899;
-  --color-amber: #f59e0b;
+  /* Colores - MemorySparks Theme (basados en el logo) */
+  --color-primary: #9b87f5; /* Morado principal del logo */
+  --color-secondary: #f4c542; /* Dorado de la estrella */
+  --color-accent: #fdd969; /* Dorado claro */
+  --color-lavender: #b8a7f9; /* Lavanda suave */
+  --color-lavender-light: #d4cbfc; /* Lavanda muy suave */
+  --color-purple: #9b87f5; /* Morado principal */
+  --color-purple-dark: #7c6bc7; /* Morado oscuro */
+  --color-gold: #f4c542; /* Dorado */
+  --color-gold-light: #fdd969; /* Dorado claro */
+  --color-gold-dark: #d4a834; /* Dorado oscuro */
   --color-black: #0f172a;
   --color-white: #ffffff;
-  --color-gray-light: #f1f5f9;
-  --color-gray-medium: #64748b;
-  --color-gray-dark: #1e293b;
+  --color-gray-light: #f8f7fc; /* Gris con tinte lavanda */
+  --color-gray-medium: #8b7fa8;
+  --color-gray-dark: #2a2540;
 
   /* Gradientes */
   --gradient-primary: linear-gradient(
     135deg,
     var(--color-purple),
-    var(--color-pink)
+    var(--color-lavender)
   );
   --gradient-secondary: linear-gradient(
     135deg,
-    var(--color-pink),
-    var(--color-amber)
+    var(--color-gold),
+    var(--color-gold-light)
   );
   --gradient-accent: linear-gradient(
     135deg,
-    var(--color-lavender),
-    var(--color-cyan)
+    var(--color-lavender-light),
+    var(--color-lavender)
   );
   --gradient-cta: linear-gradient(to right, #ffffff, var(--color-primary));
-  --gradient-title: linear-gradient(90deg, var(--color-purple), var(--color-pink), var(--color-amber));
+  --gradient-title: linear-gradient(90deg, var(--color-purple), var(--color-lavender), var(--color-gold));
+  --gradient-hero: linear-gradient(135deg, var(--color-purple) 0%, var(--color-lavender) 100%);
 
   /* Sombras */
   --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 15px rgba(124, 58, 237, 0.25);
-  --shadow-lg: 0 10px 30px rgba(124, 58, 237, 0.15);
-  --shadow-xl: 0 15px 40px rgba(124, 58, 237, 0.2);
+  --shadow-md: 0 4px 15px rgba(155, 135, 245, 0.25);
+  --shadow-lg: 0 10px 30px rgba(155, 135, 245, 0.15);
+  --shadow-xl: 0 15px 40px rgba(155, 135, 245, 0.2);
+  --shadow-gold: 0 4px 20px rgba(244, 197, 66, 0.3);
 
   /* Bordes */
   --border-radius-sm: 3px;

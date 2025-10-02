@@ -76,14 +76,14 @@
   height: 40px;
   background: linear-gradient(
     135deg,
-    rgba(138, 124, 255, 0.2),
-    rgba(77, 238, 234, 0.2)
+    rgba(155, 135, 245, 0.2),
+    rgba(244, 197, 66, 0.2)
   );
   border-radius: var(--border-radius-full);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 10px rgba(138, 124, 255, 0.15);
+  box-shadow: var(--shadow-md);
 }
 
 .feature-text h3 {
@@ -144,8 +144,9 @@
   height: 500px;
   background: radial-gradient(
     circle,
-    rgba(138, 124, 255, 0.25) 0%,
-    rgba(77, 238, 234, 0) 70%
+    rgba(155, 135, 245, 0.15) 0%,
+    rgba(244, 197, 66, 0.1) 50%,
+    rgba(184, 167, 249, 0) 70%
   );
   border-radius: var(--border-radius-full);
 }
@@ -153,8 +154,9 @@
 .feature-gradient.reverse {
   background: radial-gradient(
     circle,
-    rgba(77, 238, 234, 0.2) 0%,
-    rgba(138, 124, 255, 0) 70%
+    rgba(244, 197, 66, 0.12) 0%,
+    rgba(155, 135, 245, 0.1) 50%,
+    rgba(184, 167, 249, 0) 70%
   );
 }
 
