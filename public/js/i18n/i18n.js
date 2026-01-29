@@ -10,8 +10,8 @@ class I18n {
     this.languages = ["en", "es"];
     this.defaultLanguage = "en";
 
-    // Detect browser language
-    this.currentLanguage = this.detectLanguage();
+    // Always start with English by default (user can change it manually)
+    this.currentLanguage = this.defaultLanguage;
 
     // Initialize translations
     this.init();
@@ -20,6 +20,7 @@ class I18n {
   /**
    * Detect the browser language and match it with available languages
    * @returns {string} The detected language code or default language
+   * NOTE: This method is kept for potential future use, but we now default to English
    */
   detectLanguage() {
     // Get browser language (e.g. 'en-US', 'es-ES', etc.)
