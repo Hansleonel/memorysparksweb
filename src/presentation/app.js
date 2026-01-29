@@ -30,8 +30,6 @@ class App {
     // Configurar rutas
     this.router
       .addRoute("home", "home.html")
-      .addRoute("terms", "terms.html")
-      .addRoute("privacy", "privacy-policy.html")
       .addRoute("delete-account", "delete-account.html");
 
     // Configurar la ruta por defecto
@@ -42,8 +40,8 @@ class App {
   }
 
   setupNavigation() {
-    // Lista de enlaces de navegación
-    const links = ["home", "about", "pricing", "features", "terms", "privacy"];
+    // Lista de enlaces de navegación (solo rutas SPA)
+    const links = ["home", "about", "pricing", "features"];
 
     links.forEach((link) => {
       document
@@ -54,6 +52,9 @@ class App {
           console.log(`${link} link clicked`);
         });
     });
+
+    // Terms y Privacy son enlaces directos a páginas standalone (no SPA)
+    // Esto es requerido por Apple App Store para tener URLs permanentes
   }
 
   setupMobileMenu() {
